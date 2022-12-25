@@ -1,0 +1,113 @@
+<!-- 1. create new html file -->
+
+    
+            
+            
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tables Task</title>
+    </head>
+    <body>
+        <!-- 2. Create a <table> -->
+        <table border="1px solid purple">
+            <h3>Musical Instruments</h3>
+            
+            <!-- 3. Create a <thead> -->
+            <thead>
+                <tr>
+                    <th>Family</th>
+                    <th>Instrument</th>
+                    <th>Difficulty</th>
+                    <th>Able to March With</th>
+                </tr>
+            </thead>
+            
+            <!-- 5. Create a <tbody> -->
+            <tbody>
+                <!-- Create 4 cells with 4 columns -->
+                <tr>
+                     <!-- Merge at least two rows together -->
+                    <td rowSpan="6">Woodwinds</td>
+                    <td>Flute</td>
+                    <!-- Merge at least two cells together -->
+                    <td colSpan="2">Easy</td>
+                    <!-- <td>Yes</td> -->
+                </tr>
+
+                <tr>
+                    <td>Piccolo</td>
+                    <td>Hard</td>
+                    <td>Yes</td>
+                </tr>
+
+                <tr>
+                    <td>Clarinet</td>
+                    <td>Medium</td>
+                    <td>Yes</td>
+                </tr>
+
+                <tr>
+                    <td>Alto Saxophone</td>
+                    <td>Easy</td>
+                    <td>Yes</td>
+                </tr>
+                
+                <tr>
+                    <td>Bassoon</td>
+                    <td>Hard</td>
+                    <td>No</td>
+                </tr>
+
+                <tr>
+                    <td>Oboe</td>
+                    <!-- Merge at least two rows and two cells together -->
+                    <td rowSpan="2">Hard</td>
+                    <td rowSpan="2">Yes</td>
+                </tr>
+
+                <tr>
+                    <td rowSpan="4">Brass</td>
+                    <td>Trumpet</td>
+                    <!-- <td>Hard</td>
+                    <td>Yes</td> -->
+                </tr>
+                
+                <tr>
+                    <td>French Horn</td>
+                    <td>Very Hard</td>
+                    <td>No</td>
+                </tr>
+
+                <tr>
+                    <td>Trombone</td>
+                    <td>Easy</td>
+                    <td>Yes</td>
+                </tr>
+
+                <tr>
+                    <td>Tuba</td>
+                    <td>Medium</td>
+                    <td>Yes</td>
+                </tr>
+                
+               
+                
+
+            </tbody>
+
+            <!-- 4. Create a <tfoot> -->
+            <tfoot>
+                <tr>
+                    <th>Column #1</th>
+                    <th>Column #2</th>
+                    <th>Column #3</th>
+                    <th>Column #4</th>
+                </tr>
+            </tfoot>
+        </table>            
+    </body>
+</html>

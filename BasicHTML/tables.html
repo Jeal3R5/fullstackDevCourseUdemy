@@ -1,0 +1,150 @@
+<!-- tables are a way to display data -->
+<!-- Tables are NOT responsive -->
+<!-- We don't really use these much now, this is due to mobile devices being developed. We used to use tables for the webpage layout but with the advent of mobile phones we needed to be able to shrink the layout down to fit in the smaller screen while still able to read the website -->
+<!-- 2 times we use tables now
+1. email, it's an old technology, using tables is the standard
+2. pdf's, also an old technology but also a proprietary tech, not a webpage, it is a document, so you can't make pdf's responsible.  -->
+<!-- Knowledge of tables is necessary -->
+
+<!-- Tables have a few parts: rows (tr) and columns, table header, table body, table footer 
+(td) a table cell,  -->
+
+<!-- Table headers center the text, and are bold automatically-->
+
+
+<!-- Table merging, lets say we want to merge row one cell one and cell two
+We would write it like this: 
+ -->
+
+<!-- cell merging, delete the second one and give the first one a colSpan -->
+<!-- row merging, give the cell a rowSpan -->
+
+
+<!-- row one we have merged cell 1 and 2,
+    row two we have merged cell 3 and 4
+    row three we have merged row 3 column 1 with row 4 column 1, so we will go head and delete row 4 cell one from our code -->
+
+<!-- We can give row 2 a colSpan of 2, then delete cell 4 -->
+ <!--in row 3, we can merge the cells so that row three takes up two rows and two columns by adding a rowSpan and a colSpan to the cells, make sure you delete row 4 cells one and two so your table remains even and it doesn't just push the cells right  -->
+
+<!-- Say we want to create sub colors within one main color. For example, we have a variety of blue colors we want to include in the table, but we don't want blue repeated each row, we want to have blue and it's sub colors listed below it. To do this we are going to merge the fist cells from each row that says blue -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <table border="1px solid purple" width="100%">
+        <thead>
+            <tr>
+                <th>Color</th>
+                <th>Subcolor</th>
+                <th>Hex Value</th>
+                <th>RGB Value </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowSpan="3" bgcolor="blue">Blue</td>
+                <td>Baby Blue</td>
+                <td>#0000FF</td>
+                <td>rgba(0, 0, 255)</td>
+            </tr>
+            <tr>
+                <!-- <td>Blue</td> -->
+                <td>Navy Blue</td>
+                <td>#000080</td>
+                <td>rgba(0, 0, 128)</td>
+            </tr>
+            <tr>
+                <!-- <td>Blue</td> -->
+                <td>Ocean Blue</td>
+                <td>#009DC4</td>
+                <td>rgba(0, 157, 196)</td>
+            </tr>
+            <tr>
+                <td rowSpan="3" bgcolor="red">Red</td>
+                <td>Brick Red</td>
+                <td>#AA4A44</td>
+                <td>rgba(170, 74, 42)</td>
+            </tr>
+            <tr>
+                <td>Cherry Red</td>
+                <td>#D2042D</td>
+                <td>rgba(210, 4, 45)</td>
+            </tr>
+            <tr>
+                <td>Pastel Red</td>
+                <td>#FAA0A0</td>
+                <td>rgb(250, 160, 160)</td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+     
+    <table border="1px solid blue" width="100%">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Here we are telling the html to act as if there are two cells in row one -->
+                <td colSpan="2">Row #1 Cell #1</td>
+                <!-- We can delete cell 2 because it is being merged with cell 1  -->
+                <!-- <td>Row #1 Cell #2</td>  -->
+                <td>Row #1 Cell #3</td>
+                <td>Row #1 Cell #4</td>
+            </tr>
+            <tr>
+                <td>Row #2 Cell #1</td>
+                <td>Row #2 Cell #2</td>
+                <td colSpan="2">Row #2 Cell #3</td>
+                <!-- We can delete cell 4 since we are merging it with cell 3 -->
+                <!-- <td>Row #2 Cell #4</td> -->
+            </tr>
+            <tr>
+                <td rowSpan="2" colSPan="2">Row #3 Cell #1</td>
+                <!-- <td>Row #3 Cell #2</td> -->
+                <td>Row #3 Cell #3</td>
+                <td>Row #3 Cell #4</td>
+            </tr>
+            <tr>
+                <!-- <td>Row #4 Cell #1</td> -->
+                <!-- <td>Row #4 Cell #2</td> -->
+                <td>Row #4 Cell #3</td>
+                <td>Row #4 Cell #4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Footer Title #1</th>
+                <th>Footer Title #2</th>
+                <th>Footer Title #3</th>
+                <th>Footer Title #4</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
