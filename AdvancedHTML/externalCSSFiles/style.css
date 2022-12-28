@@ -22,3 +22,12 @@ h1 {
 .bg-yellow {
     background-color: yellow;
 }
+
+
+/* This image css is for a different file: assetPathing.html */
+
+img {
+    height: 250px;
+    width: 250px;
+    border: 5px solid yellow;
+}
