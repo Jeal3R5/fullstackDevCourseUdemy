@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Fields</title>
+</head>
+<body>
+    <form method="GET" action="images/testImage.jpg"> 
+        <div>
+            <label for="firstname">Input: Text</label>
+            <input type="text" id="firstname" name="firstname" />
+        </div>
+        <div>
+            <label for="checkboxField">Checkbox</label>
+            <input type="checkbox" value="1" name="checkbox" />
+        </div>
+        <div>
+            <label>Radio buttons</label>
+            <!-- these inputs must all have the same name -->
+            <input type="radio" name="radioTest" value="1" /> 1
+            <input type="radio" name="radioTest" value="2" /> 2
+            <input type="radio" name="radioTest" value="3" /> 3
+        </div>
+        <div>
+            <!-- Date element -->
+            <label for="">Date</label>
+            <input type="date" name="date" />    
+        </div>
+        <div>
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" name="email"> 
+        </div>
+        <div>
+            <!-- hidden values -->
+            <label for="hidden">Hidden</label>
+            <input type="hidden" name="hidden" value="isHidden" />
+        </div>
+        <div>
+            <!-- number -->
+            <label for="number">Number</label>
+            <input type="number" name="number" step="0.5" max="50" min="0" />
+        </div>
+        <div>
+            <!-- password -->
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Ghost text" />
+        </div>
+
+        <div>
+            <input type="submit" name="submit" value="Submit" />
+        </div>
+    </form>
+ 
+</body>
+</html>
+
+
+<!-- every <label> must have <input> with the same id, in example above, the labels for attribute is firstname, so the input associated with the label needs an id of the same value ie. <input type='text' id='firstname'> -->
