@@ -77,5 +77,6 @@ footer {
     background-color: #3C1361;
     color: #bca0dc;
     text-align: center;
+    overflow: hidden;
 
 }
