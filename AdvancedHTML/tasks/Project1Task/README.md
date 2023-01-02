@@ -2,7 +2,7 @@
 
 **Describe**
 
-This was a simple single page html and very minimal css website, to be done from memory as much as possible. 
+This was a simple single page html site w/ very minimal css, to be done from memory as much as possible. 
 Required:
 * Nav w/ links
 * A main section
@@ -13,10 +13,9 @@ Required:
     * input for name and email
     * submit button
 * Footer
-
-Blogs: 
-* Blog 1: include a video, using the video tag
-* Blog 2: include an image, using the img self-closing tag
+* Blogs: 
+    * Blog 1: include a video, using the video tag
+    * Blog 2: include an image, using the img self-closing tag
 
 I added:
 * Rather than an empty link for the blog sessions, I added links to each of the blogs pages, so the read more link takes you to that sessions page.
@@ -51,3 +50,13 @@ Blog Session 2
 
 Blog Session 3
 ![Session 3](https://imgur.com/0z5pV9m.png)
+
+
+Future Enhancements: 
+* Perhaps make it a live blog?
+* Build out About and Contact pages
+* Build out the Session blogs
+* Add nav to all pages
+    * Make the read blog navigation a dropdown that lists the various blog sessions
+* Add footer to all pages
+* Add more variety of fonts
