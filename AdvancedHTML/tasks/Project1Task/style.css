@@ -1,0 +1,81 @@
+body {
+    background-color: lavender;
+    color: purple;
+}
+
+nav {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 20px;
+    width: 100%;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#3C1361;
+    color: #bca0dc;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #bca0dc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: lavender;
+    color: #4D0F28;
+}
+
+
+a {
+    color: #bca0dc;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+h1 {
+    color: #4D0F28;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Goblin One', cursive;
+}
+
+main {
+    width: 100%;
+}
+
+aside {
+    color:#4D0F28;
+}
+
+p {
+    color: purple;
+}
+
+input, button {
+    width: 80%;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3C1361;
+    color: #bca0dc;
+    text-align: center;
+
+}
